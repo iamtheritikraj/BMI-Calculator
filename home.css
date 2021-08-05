@@ -19,8 +19,8 @@ header{
     display: block;
     padding:15px;
     box-shadow: rgb(23 43 99 / 30%) 0 7px 28px;
-    background-color: rgb(221, 216, 216);
-    width: 70%;
+    background-color: rgb(146 195 134 / 62%);
+    width: 60%;
     margin: 20px auto;
 }
 #bmibox{
@@ -31,24 +31,46 @@ header{
 }
 .input-button{
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
+}
+.unit-option{
+    margin: 0px 0px 0px 142px;
+}
+#unit-height.unit-option{
+    border-radius:5px;
+}
+#unit-weight.unit-option{
+    border-radius:5px;
 }
 button{
     border: 3px solid;
     border-radius: 5px;
     font-weight: bold;
-    margin: 10px 0px;
+    width: 130px;
+    margin: 10px 22px;
     padding: 4px;
+}
+button:hover{
+    color:white;
+    background-color: blue;
+    }
+button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+.userinput{
+    padding: 5px 0px;
 }
 input{
     border: 3px solid rgb(133, 133, 216);
     border-radius: 5px;
-    margin: 13px 0px 13px 98px;
+    margin: 13px 0px 13px 68px;
 }
 #inputbox{
-    padding: 30px 0px;
+    padding: 15px 0px;
 }
 #short-result{
     font-weight: bold;
