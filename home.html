@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI Calculator</title>
+    <link rel="stylesheet" href="home.css">
+    <script src="bmi.js"></script>
+</head>
+<body>
+    <header>
+        <div id="logo"></div>
+
+    </header>
+    <div id="bmiintro">
+        <div id="heading"><h1>BMI Calculator: Calculate Your Body Mass Index.</h1></div>
+        <div id="intro">BMI is a measurement of a person's leanness or corpulence based on their height and weight, and is intended to quantify tissue mass. It is widely used as a general indicator of whether a person has a healthy body weight for their height. Specifically, the value obtained from the calculation of BMI is used to categorize whether a person is underweight, normal weight, overweight, or obese depending on what range the value falls between. These ranges of BMI vary based on factors such as region and age, and are sometimes further divided into subcategories such as severely underweight or very severely obese. Being overweight or underweight can have significant health effects, so while BMI is an imperfect measure of healthy body weight, it is a useful indicator of whether any additional testing or action is required.</div>
+    </div>
+    <div id="bmicalculator">
+        <div id="bmibox">
+            <div id="calculatorname"><h3>Body Mass Index (BMI) Calculator</h3></div>
+            <div id="inputbox">
+                <div class="userinput">
+                    <label for="height-input"><b>Enter Your Height:</b></label>
+                    <input type="number" name="height" id="height-input" placeholder="select input unit first">
+                    <select name="dropdown" id="unit-height">
+                        <option value="in-metre" selected>In Metre</option>
+                        <option value="in-inch">In Inch</option>
+                    </select>
+                </div>
+                <div class="userinput">
+                    <label for="weight-input"><b>Enter Your Weight:</b></label>
+                    <input type="number" name="weight" id="weight-input" placeholder="select input unit first">
+                    <select name="dropdown" id="unit-weight">
+                        <option value="in-kgs" selected>In Kgs</option>
+                        <option value="in-pound">In Pound</option>
+                    </select>
+                </div>
+                <div class="input-button">
+                    <button onclick="bmicalculate()">Calculate</button>
+                    <button type="reset" value="reset">Reset</button>
+                </div>
+
+            </div>
+        </div>
+        <div>
+            <p id="short-result">The BMI Index is: </p>
+            <p><b>Healthy BMI Range: 18.5 kg/m<sup>2</sup> - 25 kg/m<sup>2</sup></b></p>
+            &nbsp;
+        </div>
+
+    </div>
+    <div id="full-result"></div>
+    <div id="contents">
+        <h3>BMI table for adults</h3>
+        <p>This is the World Health Organization's (WHO) recommended body weight based on BMI values for adults. It is used for both men and women, age 18 or older.</p>
+        <table class="bmitable" align="center">
+            <tr><td class="tableheading">Category</td><td class="tableheading">BMI range - kg/m<sup>2</sup></td></tr>
+            <tr><td>Severe Thinness</td><td class="tablevalue">&lt; 16</td></tr>
+            <tr><td>Moderate Thinness</td><td class="tablevalue">16 - 17</td></tr>
+            <tr><td>Mild Thinness</td><td class="tablevalue">17 - 18.5</td></tr>
+            <tr><td>Normal</td><td class="tablevalue">18.5 - 25</td></tr>
+            <tr><td>Overweight</td><td class="tablevalue">25 - 30</td></tr>
+            <tr><td>Obese Class I</td><td class="tablevalue">30 - 35</td></tr>
+            <tr><td>Obese Class II</td><td class="tablevalue">35 - 40</td></tr>
+            <tr><td>Obese Class III</td><td class="tablevalue">&gt; 40</td></tr>
+        </table>
+        <h3>BMI chart for adults</h3>
+        <p>This is a graph of BMI categories based on the World Health Organization data. The dashed lines represent subdivisions within a major categorization.</p>
+        <p style="text-align:center;"><img src="//d26tpo4cm8sb6k.cloudfront.net/img/bmi-chart.gif" width="529" height="441" /></p>
+        <h3>BMI table for children and teens, age 2-20</h3>
+        <p>The Centers for Disease Control and Prevention (CDC) recommends BMI categorization for children and teens between age 2 and 20.</p>
+        <table class="bmitable" align="center">
+            <tr><td class="tableheading">Category</td><td class="tableheading">Percentile Range</td></tr>
+            <tr><td>Underweight</td><td class="tablevalue">&lt;5%</td></tr>
+            <tr><td>Healthy weight</td><td class="tablevalue">5% - 85%</td></tr>
+            <tr><td>At risk of overweight</td><td class="tablevalue">85% - 95%</td></tr>
+            <tr><td>Overweight</td><td class="tablevalue">&gt;95%</td></tr>
+        </table>
+    </div>
+    &nbsp;
+    <div id="bmiformula">
+        <h3>BMI formula</h3>
+        <p>Below are the equations used for calculating BMI in the International System of Units (SI) and the US customary system (USC) using a 5'10", 160-pound individual as an example:</p>
+        <table align="center"><tr><td>
+        <div><b>USC Units:</b></div>
+            <table cellspacing="0" cellpadding="0"><tr>
+                <td> BMI = 703 &#215;&nbsp;</td>
+                <td><table cellspacing="0" cellpadding="0"><tr><td>mass (lbs)</td></tr><tr><td bgcolor="#000000" height="1"></td></tr><tr><td>height<sup>2</sup> (in)</td></tr></table></td>
+                <td align="right">= 703 &#215;&nbsp;</td>
+                <td><table cellspacing="0" cellpadding="0"><tr><td>160</td></tr><tr><td bgcolor="#000000" height="1"></td></tr><tr><td>70<sup>2</sup></td></tr></table></td>
+                <td align="right">= 22.96&nbsp;</td>
+                <td><table cellspacing="0" cellpadding="0"><tr><td>kg</td></tr><tr><td bgcolor="#000000" height="1"></td></tr><tr><td>m<sup>2</sup></td></tr></table></td>
+                </tr>
+            </table>
+            &nbsp;
+        <div><b>SI, Metric Units:</b></div>
+            <table cellspacing="0" cellpadding="0"><tr>
+                <td> BMI =&nbsp;</td>
+                <td colspan="2"><table cellspacing="0" cellpadding="0"><tr><td>mass (kg)</td></tr><tr><td bgcolor="#000000" height="1"></td></tr><tr><td>height<sup>2</sup> (m)</td></tr></table></td>
+                <td align="right">&nbsp;=&nbsp;</td>
+                <td colspan="2"><table cellspacing="0" cellpadding="0"><tr><td>72.57</td></tr><tr><td bgcolor="#000000" height="1"></td></tr><tr><td>1.78<sup>2</sup></td></tr></table></td>
+                <td align="right">&nbsp;=&nbsp;</td>
+                <td>22.90</td>
+                <td><table cellspacing="0" cellpadding="0"><tr><td>kg</td></tr><tr><td bgcolor="#000000" height="1"></td></tr><tr><td>m<sup>2</sup></td></tr></table></td>
+                </tr></table>
+                </td></tr>
+            </table>
+    </div>
+    <footer>copyright</footer>
+    
+</body>
+</html>
