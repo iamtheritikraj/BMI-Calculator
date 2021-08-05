@@ -9,9 +9,12 @@
 }
 
 header{
-    height: 75px;
-    position: sticky;
     background-color:rgb(202, 186, 186);
+}
+#logo img{
+    width: 245px;
+    height: 72px;
+    margin-left: 0px;
 }
 #bmicalculator {
     border: 2px solid grey;
@@ -70,7 +73,7 @@ input{
     margin: 13px 0px 13px 68px;
 }
 #inputbox{
-    padding: 15px 0px;
+    padding: 15px 53px;
 }
 #short-result{
     font-weight: bold;
