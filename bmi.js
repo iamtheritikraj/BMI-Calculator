@@ -13,8 +13,14 @@ height=height*0.0254;
 if(weightunit=="in-pound")
 weight=weight*0.453592;
 var bmi=weight/(height*height);
-console.log(height);
-console.log(weight);
-console.log(bmi);
-document.getElementById("short-result").innerHTML="Your BMI Index is "+bmi.toFixed(2)+ ".";
+if(isNaN(bmi)==false)
+{
+let result = document.querySelector("#short-result");
+if (bmi < 18.6)
+result.innerHTML="Your BMI Index is "+bmi.toFixed(2)+ " (Under Weight)";
+else if (bmi >= 18.5 && bmi < 25) 
+result.innerHTML="Your BMI Index is "+bmi.toFixed(2)+ " (Normal)";
+else
+result.innerHTML="Your BMI Index is "+bmi.toFixed(2)+ " (Over Weight)";
+}
 }
