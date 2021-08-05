@@ -4,14 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BMI Calculator</title>
+    <meta name="description" content="BMI Calculator: Calculate your BMI Now. If you want to calculate your body mass index then you are at right place. 
+    online BMI Calculator Website. Calculate your bmi in kgs, inch, pounds, metres.">
+    <meta name="keywords" content="Calculate BMI for Women, Calculate BMI for Men, Calculate BMI for adult, Calculate BMI for children. BMI Calculator in kgs, 
+    BMI Calculator in pounds, BMI Calculator in inch, BMI Calculator in metre, BMI Calculator in cm, BMI Calculator women, 
+    BMI Calculator men ">
+    <meta name="author" content="Ritik Raj">
+    <title>BMI Calculator - Calculate BMI Online Now</title>
+    <link rel="icon" href="bmi-calculator-site-icon.png" type="image">
     <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" media="screen and (max-width:1500px)" href="responsive.css">
     <script src="bmi.js"></script>
 </head>
 <body>
     <header>
-        <div id="logo"></div>
-
+        <div id="logo"><a href="index.html"><img src="bmi-calculator-site-logo.png" alt="BMI Calculator"></a></div>
     </header>
     <div id="bmiintro">
         <div id="heading"><h1>BMI Calculator: Calculate Your Body Mass Index.</h1></div>
@@ -21,7 +28,6 @@
         </p></div>
     </div>
     <div id="bmicalculator">
-        <form>
         <div id="bmibox">
             <div id="calculatorname"><h3>Body Mass Index (BMI) Calculator</h3></div>
             <div id="inputbox">
@@ -43,12 +49,11 @@
                 </div>
                 <div class="input-button">
                     <button onclick="bmicalculate()">Calculate</button>
-                    <button type="reset" value="reset">Reset</button>
+                    <button onClick="window.location.reload();">Re-Check</button>
                 </div>
 
             </div>
         </div>
-        </form>
         <div>
             <p id="short-result">The BMI Index is:</p>
             <p>Healthy BMI Range: 18.5 kg/m2 - 25kg/m2</p>
