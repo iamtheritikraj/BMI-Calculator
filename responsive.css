@@ -1,6 +1,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    text-align: center;
 }
 #bmicalculator{
     width: 80%;
@@ -19,4 +20,8 @@ input{
 }
 #bmiintro{
     margin: 10px;
+}
+#bmi-graph{
+    width:200px;
+    height: 200px;
 }
