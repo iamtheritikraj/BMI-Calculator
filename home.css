@@ -2,9 +2,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@200&display=swap');
 
 *{
-    margin: 0px;
+    margin: 0px 50px;
     padding:0px;
     font-family: 'Public Sans', sans-serif;
+    font-size: 20px;
 }
 
 header{
@@ -12,23 +13,15 @@ header{
     position: sticky;
     background-color:rgb(202, 186, 186);
 }
-#heading{
-    margin: 10px 0px;
-}
-#intro{
-    font-size: 20px;
-    margin: 50px;
-}
-
 #bmicalculator {
     border: 2px solid grey;
     border-radius: 5px;
     display: block;
-    margin:40px auto;
-    width: 40%; 
     padding:15px;
     box-shadow: rgb(23 43 99 / 30%) 0 7px 28px;
     background-color: rgb(221, 216, 216);
+    width: 70%;
+    margin: 20px auto;
 }
 #bmibox{
     display: flex;
@@ -43,24 +36,19 @@ header{
     align-items: center;
 }
 button{
-    margin: 5px;
-    padding:5px;
     border: 3px solid;
     border-radius: 5px;
     font-weight: bold;
-}
-.userinput{
-    margin:5px;
+    margin: 10px 0px;
+    padding: 4px;
 }
 input{
-    padding:5px;
-    margin: 5px;
     border: 3px solid rgb(133, 133, 216);
     border-radius: 5px;
+    margin: 13px 0px 13px 98px;
 }
-option{
-    padding:5px;
-    margin: 5px;
+#inputbox{
+    padding: 30px 0px;
 }
 #short-result{
     font-weight: bold;
@@ -75,15 +63,8 @@ option{
     background-color: rgb(230, 16, 80);
     font-weight: bold;
 }
-#contents{
-    margin: 0px 50px;
-}
-#bmiformula{
-    margin: 0px 50px;
-}
 footer{
     position: relative;
     background-color: rgb(218, 168, 168);
-    height: 15px;
     margin-bottom: 0px;
 }
