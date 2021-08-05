@@ -92,4 +92,7 @@ footer{
     position: relative;
     background-color: rgb(218, 168, 168);
     margin-bottom: 0px;
+    text-align: center;
+    padding: 10px 0px;
+    font-size: 15px;
 }
