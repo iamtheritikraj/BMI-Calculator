@@ -21,21 +21,22 @@
         </p></div>
     </div>
     <div id="bmicalculator">
+        <form>
         <div id="bmibox">
             <div id="calculatorname"><h3>Body Mass Index (BMI) Calculator</h3></div>
             <div id="inputbox">
                 <div class="userinput">
                     <label for="height-input"><b>Enter Your Height:</b></label>
-                    <input type="number" name="height" id="height-input" placeholder="select input unit first">
-                    <select name="dropdown" id="unit-height">
+                    <input type="number" name="height" id="height-input">
+                    <select name="dropdown" id="unit-height" class="unit-option">
                         <option value="in-metre" selected>In Metre</option>
                         <option value="in-inch">In Inch</option>
                     </select>
                 </div>
                 <div class="userinput">
                     <label for="weight-input"><b>Enter Your Weight:</b></label>
-                    <input type="number" name="weight" id="weight-input" placeholder="select input unit first">
-                    <select name="dropdown" id="unit-weight">
+                    <input type="number" name="weight" id="weight-input">
+                    <select name="dropdown" id="unit-weight" class="unit-option">
                         <option value="in-kgs" selected>In Kgs</option>
                         <option value="in-pound">In Pound</option>
                     </select>
@@ -47,6 +48,7 @@
 
             </div>
         </div>
+        </form>
         <div>
             <p id="short-result">The BMI Index is:</p>
             <p>Healthy BMI Range: 18.5 kg/m2 - 25kg/m2</p>
